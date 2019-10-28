@@ -9,16 +9,16 @@ function sortByName(items) {
 
 function getBookElement(name, author, image) {
     let newBookElement = document.createElement("DIV")
-    newBook.className = "book"
+    newBookElement.className = "book"
     let imageElement = document.createElement("IMG")
-    image.src = image
-    newBook.appendChild(imageElement)
+    imageElement.src = image
+    newBookElement.appendChild(imageElement)
     let bookNameElement = document.createElement("H2")
-    bookName.innerHTML = name
-    newBook.appendChild(bookNameElement)
+    bookNameElement.innerHTML = name
+    newBookElement.appendChild(bookNameElement)
     let bookAuthorElement = document.createElement("P")
-    bookAuthor.innerHTML = "by " + author
-    newBook.appendChild(bookAuthorElement)
+    bookAuthorElement.innerHTML = "by " + author
+    newBookElement.appendChild(bookAuthorElement)
     return newBookElement
 }
 
