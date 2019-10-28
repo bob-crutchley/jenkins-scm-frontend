@@ -12,6 +12,7 @@ axios.get("/api/books").then((response) => {
     let books = sortByName(response.data)
     let bookShelve = document.getElementById("bookshelve")
     books.forEach(book => {
+        console.log(book)
         let newBook = document.createElement("DIV")
         newBook.className = "book"
 
